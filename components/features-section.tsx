@@ -74,7 +74,7 @@ export function FeaturesSection() {
           <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-4">Why Choose Peridot Services?</h2>
           <p className="text-lg text-muted-foreground max-w-3xl mx-auto">
             We combine technical expertise with innovative solutions to deliver engineering and construction projects 
-            that power Pakistan's infrastructure development since 2015
+            that power Pakistan&#39;s infrastructure development since 2015
           </p>
         </div>
 

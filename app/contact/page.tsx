@@ -75,7 +75,7 @@ export default function ContactPage() {
               Message Sent Successfully!
             </h1>
             <p className="text-lg text-muted-foreground mb-8">
-              Thank you for contacting Peridot Engineering. We've received your message and will respond within 24
+              Thank you for contacting Peridot Engineering. We&#39;ve received your message and will respond within 24
               hours.
             </p>
             <Button onClick={() => setIsSubmitted(false)} variant="outline">
@@ -183,7 +183,7 @@ export default function ContactPage() {
                 <CardHeader>
                   <CardTitle className="text-2xl font-sans">Send us a Message</CardTitle>
                   <p className="text-muted-foreground">
-                    Have a question or want to discuss your project? Fill out the form below and we'll get back to you
+                    Have a question or want to discuss your project? Fill out the form below and we&#39;ll get back to you
                     promptly.
                   </p>
                 </CardHeader>

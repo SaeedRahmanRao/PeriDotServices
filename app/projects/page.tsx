@@ -5,6 +5,7 @@ import { Badge } from "@/components/ui/badge"
 import Link from "next/link"
 import { Building2, Zap, MapPin, Users } from "lucide-react"
 import { Footer } from "@/components/footer"
+import Image from "next/image"
 
 const projects = [
   {
@@ -14,7 +15,7 @@ const projects = [
     client: "Green Building Technologies Pvt.Ltd",
     location: "DHA Phase II, Islamabad",
     category: "Electrical",
-    image: "/mobile-tower-construction-site.png",
+    image: "/building.jpeg",
     status: "Completed",
   },
   {
@@ -24,7 +25,7 @@ const projects = [
     client: "A.S Khan Constructions Pvt.Ltd",
     location: "Ministry of Foreign Affairs, Islamabad",
     category: "Civil",
-    image: "/solar-control-room-building.png",
+    image: "/building.jpeg",
     status: "Completed",
   },
   {
@@ -34,7 +35,7 @@ const projects = [
     client: "Engineering Development Board, Ministry of Industries",
     location: "Red Zone, Islamabad",
     category: "Interior",
-    image: "/telecommunications-tower-installation.png",
+    image: "/building.jpeg",
     status: "Completed",
   },
   {
@@ -44,7 +45,7 @@ const projects = [
     client: "KFC - Pakistan, North Zone",
     location: "F/10 Branch - Pindi Sader Branch",
     category: "Renovation",
-    image: "/solar-monitoring-control-room.png",
+    image: "/building.jpeg",
     status: "Completed",
   },
   {
@@ -54,7 +55,7 @@ const projects = [
     client: "KFC - Pakistan, North Zone",
     location: "Multiple locations across North Region",
     category: "Interior",
-    image: "/solar-monitoring-control-room.png",
+    image: "/building.jpeg",
     status: "Completed",
   },
   {
@@ -64,7 +65,7 @@ const projects = [
     client: "Shaheen Enterprises Pvt.Ltd",
     location: "Havelian Cantt Havelian",
     category: "Construction",
-    image: "/modern-telecommunications-tower.png",
+    image: "/building.jpeg",
     status: "Completed",
   },
   {
@@ -74,7 +75,7 @@ const projects = [
     client: "Private Client",
     location: "House# 08, Power Avenue, Sector- H, D.H.A II Islamabad",
     category: "Residential",
-    image: "/solar-power-control-center.png",
+    image: "/building.jpeg",
     status: "Completed",
   },
   {
@@ -84,7 +85,7 @@ const projects = [
     client: "Akber Associates / New City Builders",
     location: "Mall Road, Saddar, Rawalpindi",
     category: "Commercial",
-    image: "/rural-telecommunications-tower.png",
+    image: "/building.jpeg",
     status: "Completed",
   },
   {
@@ -94,7 +95,7 @@ const projects = [
     client: "Green Building Technologies",
     location: "Peshawar Morr, Islamabad",
     category: "Infrastructure",
-    image: "/renewable-energy-operations-center.png",
+    image: "/building.jpeg",
     status: "Completed",
   },
   {
@@ -104,7 +105,7 @@ const projects = [
     client: "AL IMAM, CM Engineering, Powertech, ASSOCIATED TECHNOLOGIES",
     location: "Various locations across Pakistan (KPK, Punjab, Sindh)",
     category: "Mobile Tower",
-    image: "/mobile-tower-construction-site.png",
+    image: "/building.jpeg",
     status: "Completed",
   },
   {
@@ -114,7 +115,7 @@ const projects = [
     client: "Warsi Engineering (Pvt) Ltd",
     location: "Various Cantt locations in Punjab (Chunia, Gujranwala, Kharian, etc.)",
     category: "Solar Infrastructure",
-    image: "/solar-control-room-building.png",
+    image: "/building.jpeg",
     status: "Completed",
   },
   {
@@ -124,7 +125,7 @@ const projects = [
     client: "FWO - 495",
     location: "Kalabagh",
     category: "Infrastructure",
-    image: "/telecommunications-tower-installation.png",
+    image: "/building.jpeg",
     status: "Completed",
   },
   {
@@ -134,7 +135,7 @@ const projects = [
     client: "Faraz Khan & Muhammad Faheem Khan",
     location: "Bahria Town & DHA Phase II, Islamabad",
     category: "Residential",
-    image: "/solar-monitoring-control-room.png",
+    image: "/building.jpeg",
     status: "Completed",
   },
   {
@@ -144,7 +145,7 @@ const projects = [
     client: "KFC - Pakistan, North Zone",
     location: "Multiple KFC locations",
     category: "Equipment Installation",
-    image: "/solar-monitoring-control-room.png",
+    image: "/building.jpeg",
     status: "Completed",
   },
 ]
@@ -229,10 +230,13 @@ export default function ProjectsPage() {
             {projects.map((project) => (
               <Card key={project.id} className="border-border hover:shadow-lg transition-all duration-300 group">
                 <div className="relative overflow-hidden rounded-t-lg">
-                  <img
-                    src={project.image || "/placeholder.svg"}
+                  <Image
+                    src={project.image || "/building.jpeg"}
                     alt={project.title}
+                    width={1200}
+                    height={400}
                     className="w-full h-48 object-cover group-hover:scale-105 transition-transform duration-300"
+                    priority={false}
                   />
                   <div className="absolute top-4 right-4">
                     <Badge

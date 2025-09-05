@@ -9,7 +9,7 @@ export function CTASection() {
         <div className="bg-gradient-to-r from-accent/10 to-accent/5 rounded-2xl p-8 md:p-12 text-center">
           <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-4">Ready to Start Your Next Project?</h2>
           <p className="text-lg text-muted-foreground mb-8 max-w-2xl mx-auto">
-            Get in touch with our engineering experts today. We'll provide you with a detailed consultation and free
+            Get in touch with our engineering experts today. We&#39;ll provide you with a detailed consultation and free
             project quote within 24 hours.
           </p>
 

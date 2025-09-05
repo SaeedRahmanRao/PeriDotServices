@@ -2,6 +2,7 @@
 
 import { Star, Quote } from "lucide-react"
 import { useEffect, useState, useRef } from "react"
+import Image from "next/image"
 
 function useIntersectionObserver() {
   const [isVisible, setIsVisible] = useState(false)
@@ -67,7 +68,7 @@ export function TestimonialsSection() {
         >
           <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-4">What Our Clients Say</h2>
           <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-            Don't just take our word for it. Here's what industry leaders say about our engineering solutions
+            Don&#39;t just take our word for it. Here&#39;s what industry leaders say about our engineering solutions
           </p>
         </div>
 
@@ -96,15 +97,17 @@ export function TestimonialsSection() {
               </div>
 
               <p className="text-muted-foreground mb-6 leading-relaxed transition-colors duration-300 group-hover:text-foreground/80">
-                "{testimonial.content}"
+                &quot;{testimonial.content}&quot;
               </p>
 
               <div className="border-t border-border pt-4 transition-all duration-300 group-hover:border-accent/30">
                 <div className="flex items-center gap-3">
                   <div className="w-8 h-8 bg-accent/10 rounded-full flex items-center justify-center">
-                    <img 
+                    <Image 
                       src="/peridotlogo.png" 
                       alt="Peridot Services Logo" 
+                      width={20}
+                      height={20}
                       className="w-5 h-5 object-contain"
                     />
                   </div>

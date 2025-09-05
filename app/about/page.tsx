@@ -19,7 +19,7 @@ export default function AboutPage() {
             </h1>
             <p className="text-lg md:text-xl text-muted-foreground text-pretty">
               Since 2015, we have been delivering quality services in Engineering, General Order Supplies, Construction,
-              and Building Materials. Operating under our motto "We learn, We lead," we approach a decade in the
+              and Building Materials. Operating under our motto &quot;We learn, We lead,&quot; we approach a decade in the
               construction industry with a dedicated team and upgraded systems.
             </p>
           </div>
@@ -40,7 +40,7 @@ export default function AboutPage() {
                 </div>
                 <p className="text-muted-foreground leading-relaxed">
                   To provide quality services in Engineering, General Order Supplies, Construction, and Building
-                  Materials customized to our clients' budgets. We are committed to delivering constructive resources
+                  Materials customized to our clients&#39; budgets. We are committed to delivering constructive resources
                   and satisfied results through our core principles of Innovation, Dedication, Client Satisfaction, and
                   Institutional Development.
                 </p>
@@ -168,7 +168,7 @@ export default function AboutPage() {
               </div>
               <h3 className="text-lg font-sans font-semibold text-foreground mb-2">Budget-Customized Solutions</h3>
               <p className="text-muted-foreground text-sm">
-                Quality services tailored to meet our clients' specific budget requirements and project needs
+                Quality services tailored to meet our clients&#39; specific budget requirements and project needs
               </p>
             </div>
           </div>
@@ -182,7 +182,7 @@ export default function AboutPage() {
             Ready to Start Your Project?
           </h2>
           <p className="text-lg text-muted-foreground mb-8">
-            Let's discuss how our engineering expertise can bring your infrastructure vision to life.
+            Let&#39;s discuss how our engineering expertise can bring your infrastructure vision to life.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Button asChild size="lg" className="bg-accent hover:bg-accent/90">

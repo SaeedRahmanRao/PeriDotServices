@@ -4,6 +4,7 @@ import Link from "next/link"
 import { useState, useEffect } from "react"
 import { Button } from "@/components/ui/button"
 import { Menu, X } from "lucide-react"
+import Image from "next/image"
 
 export function Navigation() {
   const [isOpen, setIsOpen] = useState(false)
@@ -29,9 +30,11 @@ export function Navigation() {
         <div className="flex justify-between items-center h-16">
           <Link href="/" className="flex items-center space-x-3 group">
             <div className="w-14 h-14 transition-all duration-300 group-hover:scale-110 group-hover:shadow-lg">
-              <img 
+              <Image 
                 src="/peridotlogo.png" 
                 alt="Peridot Services Logo" 
+                width={56}
+                height={56}
                 className="w-full h-full object-contain"
               />
             </div>

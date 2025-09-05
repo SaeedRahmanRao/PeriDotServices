@@ -10,7 +10,7 @@ import { Label } from "@/components/ui/label"
 import { Textarea } from "@/components/ui/textarea"
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select"
 import { useState } from "react"
-import { CheckCircle, Upload, Phone, Mail, MapPin, Clock, FileText, Send, X } from "lucide-react"
+import { CheckCircle, Upload, Phone, Mail, MapPin, Clock, FileText, Send } from "lucide-react"
 import { Footer } from "@/components/footer"
 
 export default function QuotePage() {
@@ -125,11 +125,11 @@ export default function QuotePage() {
                 </div>
                 <div className="flex items-center gap-2">
                   <Phone className="h-4 w-4" />
-                  <span>We'll contact you within 24 hours to discuss details</span>
+                  <span>We&#39;ll contact you within 24 hours to discuss details</span>
                 </div>
                 <div className="flex items-center gap-2">
                   <FileText className="h-4 w-4" />
-                  <span>You'll receive a comprehensive quote with project timeline</span>
+                  <span>You&#39;ll receive a comprehensive quote with project timeline</span>
                 </div>
               </div>
             </div>

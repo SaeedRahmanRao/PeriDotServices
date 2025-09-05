@@ -259,7 +259,7 @@ export default function ServicesPage() {
                 <h3 className="text-xl font-sans font-semibold text-foreground mb-4">Decade of Experience</h3>
                 <p className="text-muted-foreground leading-relaxed">
                   Since 2015, we have developed a dedicated team and upgraded our systems to pursue new horizons with
-                  our motto "We learn, We lead."
+                  our motto &quot;We learn, We lead.&quot;
                 </p>
               </CardContent>
             </Card>
@@ -271,7 +271,7 @@ export default function ServicesPage() {
                 </div>
                 <h3 className="text-xl font-sans font-semibold text-foreground mb-4">Budget-Customized Quality</h3>
                 <p className="text-muted-foreground leading-relaxed">
-                  We deliver quality services customized to our clients' budgets, ensuring satisfied results and
+                  We deliver quality services customized to our clients&#39; budgets, ensuring satisfied results and
                   constructive resources for every project.
                 </p>
               </CardContent>

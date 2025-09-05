@@ -3,147 +3,148 @@ import { Button } from "@/components/ui/button"
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card"
 import { Badge } from "@/components/ui/badge"
 import Link from "next/link"
-import { Building2, Users, MapPin, Award, Star, CheckCircle, Phone, Mail, Globe } from "lucide-react"
+import { Building2, Users, MapPin, Star, CheckCircle } from "lucide-react"
 import { Footer } from "@/components/footer"
+import Image from "next/image"
 
 const clients = [
   {
     name: "A.S Khan Constructions Pvt.Ltd",
     category: "Construction",
     projects: ["Construction of New Building New Block – Constitution Avenue"],
-    logo: "/placeholder.svg"
+    logo: "/building.jpeg"
   },
   {
     name: "Akber Associates / New City Builders",
     category: "Construction",
     projects: ["Construction of Plaza Cinema"],
-    logo: "/placeholder.svg"
+    logo: "/building.jpeg"
   },
   {
     name: "AL IMAM ENTERPRISES",
     category: "Telecommunications",
     projects: ["Mobile Tower Projects (Multiple)"],
-    logo: "/placeholder.svg"
+    logo: "/building.jpeg"
   },
   {
     name: "Al-Imam (Pvt) Ltd.",
     category: "Telecommunications",
     projects: ["Mobile Tower Projects (Multiple)"],
-    logo: "/placeholder.svg"
+    logo: "/building.jpeg"
   },
   {
     name: "Al-Shifa Trust Hospital",
     category: "Healthcare",
     projects: ["Healthcare Infrastructure Projects"],
-    logo: "/placeholder.svg"
+    logo: "/building.jpeg"
   },
   {
     name: "ASSOCIATED TECHNOLOGIES (PVT) LTD.",
     category: "Technology",
     projects: ["Mobile Tower Projects (Multiple)"],
-    logo: "/placeholder.svg"
+    logo: "/building.jpeg"
   },
   {
     name: "Behria Town, Rawalpindi",
     category: "Real Estate",
     projects: ["Residential Construction Projects"],
-    logo: "/placeholder.svg"
+    logo: "/building.jpeg"
   },
   {
     name: "Chicken Cottage",
     category: "Food & Beverage",
     projects: ["Interior work of Chicken Cottage Branches"],
-    logo: "/placeholder.svg"
+    logo: "/building.jpeg"
   },
   {
     name: "CM Engineering Pvt Ltd",
     category: "Engineering",
     projects: ["Mobile Tower Projects (Multiple)"],
-    logo: "/placeholder.svg"
+    logo: "/building.jpeg"
   },
   {
     name: "Engineering Development Board, Ministry of Industries",
     category: "Government",
     projects: ["Interior Work of E.D.B New Office Building I.F.C Tower"],
-    logo: "/placeholder.svg"
+    logo: "/building.jpeg"
   },
   {
     name: "Faraz Khan",
     category: "Private Client",
     projects: ["Construction of 7, 10 Marla & 1 Kanal Houses"],
-    logo: "/placeholder.svg"
+    logo: "/building.jpeg"
   },
   {
     name: "Frontier Work Organization (FWO)",
     category: "Government",
     projects: ["CPEC Infrastructure Project"],
-    logo: "/placeholder.svg"
+    logo: "/building.jpeg"
   },
   {
     name: "Green Building Technologies Pvt.Ltd",
     category: "Technology",
     projects: ["Giga Mall Islamabad / Hyperstar", "Metro Bus Project P-III"],
-    logo: "/placeholder.svg"
+    logo: "/building.jpeg"
   },
   {
     name: "KFC - Pakistan, North Zone",
     category: "Food & Beverage",
     projects: ["Complete Renovations of K.F.C Restaurants North – Region Pakistan", "KFC Restaurant Interior Renovations", "KFC Restaurant Equipment Installation"],
-    logo: "/placeholder.svg"
+    logo: "/building.jpeg"
   },
   {
     name: "Muhammad Faheem Khan",
     category: "Private Client",
     projects: ["Construction of 7, 10 Marla & 1 Kanal Houses"],
-    logo: "/placeholder.svg"
+    logo: "/building.jpeg"
   },
   {
     name: "National Logistic Cell (NLC)",
     category: "Government",
     projects: ["Logistics Infrastructure Projects"],
-    logo: "/placeholder.svg"
+    logo: "/building.jpeg"
   },
   {
     name: "Peradise Complex, Islamabad",
     category: "Commercial",
     projects: ["Commercial Construction Projects"],
-    logo: "/placeholder.svg"
+    logo: "/building.jpeg"
   },
   {
     name: "Plan Pakistan",
     category: "NGO",
     projects: ["Development Projects"],
-    logo: "/placeholder.svg"
+    logo: "/building.jpeg"
   },
   {
     name: "Powertech Pakistan (Private) Limited",
     category: "Technology",
     projects: ["Mobile Tower Projects (Multiple)"],
-    logo: "/placeholder.svg"
+    logo: "/building.jpeg"
   },
   {
     name: "Sattar Buksh Cafe",
     category: "Food & Beverage",
     projects: ["Cafe Interior and Construction Projects"],
-    logo: "/placeholder.svg"
+    logo: "/building.jpeg"
   },
   {
     name: "Shaheen Enterprises Pvt.Ltd.",
     category: "Construction",
     projects: ["Complete Construction Of Structure SSD - 256 Barracks Bk-03 & B.N office"],
-    logo: "/placeholder.svg"
+    logo: "/building.jpeg"
   },
   {
     name: "Warsi Engineering (Pvt) Ltd",
     category: "Engineering",
     projects: ["Solar Control Room Projects (Multiple)"],
-    logo: "/placeholder.svg"
+    logo: "/building.jpeg"
   },
   {
     name: "Zameen.com",
     category: "Technology",
     projects: ["Technology Infrastructure Projects"],
-    logo: "/placeholder.svg"
+    logo: "/building.jpeg"
   }
 ]
 
@@ -409,13 +410,15 @@ export default function ClientsPage() {
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
             {clients.map((client, index) => (
               <div key={index} className="flex items-center gap-4 p-4 rounded-lg border border-border hover:bg-muted/50 transition-all duration-300">
-                                 <div className="w-12 h-12 bg-accent/10 rounded-lg flex items-center justify-center flex-shrink-0">
-                   <img 
-                     src="/peridotlogo.png" 
-                     alt="Peridot Services Logo" 
-                     className="w-8 h-8 object-contain"
-                   />
-                 </div>
+                <div className="w-12 h-12 bg-accent/10 rounded-lg flex items-center justify-center flex-shrink-0">
+                  <Image 
+                    src="/peridotlogo.png" 
+                    alt="Peridot Services Logo" 
+                    width={32}
+                    height={32}
+                    className="w-8 h-8 object-contain"
+                  />
+                </div>
                 <div className="flex-1 min-w-0">
                   <h3 className="font-sans font-semibold text-foreground truncate">{client.name}</h3>
                   <p className="text-sm text-muted-foreground">{client.category}</p>
@@ -508,14 +511,16 @@ export default function ClientsPage() {
                   ))}
                 </div>
                 <p className="text-muted-foreground mb-4 italic">
-                  "Peridot Services delivered exceptional quality on our Giga Mall project. Their electrical expertise 
-                  and professional approach exceeded our expectations."
+                  &quot;Peridot Services delivered exceptional quality on our Giga Mall project. Their electrical expertise 
+                  and professional approach exceeded our expectations.&quot;
                 </p>
                 <div className="flex items-center gap-3">
                   <div className="w-10 h-10 bg-accent/10 rounded-full flex items-center justify-center">
-                    <img 
+                    <Image 
                       src="/peridotlogo.png" 
                       alt="Peridot Services Logo" 
+                      width={24}
+                      height={24}
                       className="w-6 h-6 object-contain"
                     />
                   </div>
@@ -535,14 +540,16 @@ export default function ClientsPage() {
                   ))}
                 </div>
                 <p className="text-muted-foreground mb-4 italic">
-                  "The renovation work on our KFC branches was completed on time and within budget. 
-                  Their attention to detail and quality standards are outstanding."
+                  &quot;The renovation work on our KFC branches was completed on time and within budget. 
+                  Their attention to detail and quality standards are outstanding.&quot;
                 </p>
                 <div className="flex items-center gap-3">
                   <div className="w-10 h-10 bg-accent/10 rounded-full flex items-center justify-center">
-                    <img 
+                    <Image 
                       src="/peridotlogo.png" 
                       alt="Peridot Services Logo" 
+                      width={24}
+                      height={24}
                       className="w-6 h-6 object-contain"
                     />
                   </div>
@@ -562,14 +569,16 @@ export default function ClientsPage() {
                   ))}
                 </div>
                 <p className="text-muted-foreground mb-4 italic">
-                  "Peridot Services has been instrumental in our mobile tower projects across Pakistan. 
-                  Their technical expertise and reliability make them our preferred partner."
+                  &quot;Peridot Services has been instrumental in our mobile tower projects across Pakistan. 
+                  Their technical expertise and reliability make them our preferred partner.&quot;
                 </p>
                 <div className="flex items-center gap-3">
                   <div className="w-10 h-10 bg-accent/10 rounded-full flex items-center justify-center">
-                    <img 
+                    <Image 
                       src="/peridotlogo.png" 
                       alt="Peridot Services Logo" 
+                      width={24}
+                      height={24}
                       className="w-6 h-6 object-contain"
                     />
                   </div>

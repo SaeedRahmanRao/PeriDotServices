@@ -1,5 +1,6 @@
 import Link from "next/link"
-import { Building2, Mail, Phone, MapPin, Clock, Facebook, Instagram } from "lucide-react"
+import { Mail, Phone, MapPin, Clock, Facebook, Instagram } from "lucide-react"
+import Image from "next/image"
 
 export function Footer() {
   return (
@@ -11,9 +12,11 @@ export function Footer() {
           <div className="space-y-4">
             <div className="flex items-center space-x-3">
               <div className="w-14 h-14">
-                <img 
+                <Image 
                   src="/peridotlogo.png" 
                   alt="Peridot Services Logo" 
+                  width={56}
+                  height={56}
                   className="w-full h-full object-contain"
                 />
               </div>

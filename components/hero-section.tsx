@@ -44,8 +44,8 @@ export function HeroSection() {
             }`}
           >
             Peridot Services (Pvt) Ltd. has been delivering excellence in Engineering, General Order Supplies,
-            Construction, and Building Materials since 2015. We provide quality services customized to our clients'
-            budgets with our motto "We learn, We lead."
+            Construction, and Building Materials since 2015. We provide quality services customized to our clients&#39;
+            budgets with our motto &quot;We learn, We lead.&quot;
           </p>
 
           <div
